@@ -1,9 +1,11 @@
 import React from "react";
+import ActivityCard from "./ActivityCard";
 
-function ActivitiesContainer() {
+function ActivitiesContainer({ activities }) {
     return (
         <div>
-
+            {activities.map((activity) =>
+            <ActivityCard key={activity.id} activity={activity} />)}
         </div>
     )
 }

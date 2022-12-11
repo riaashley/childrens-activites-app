@@ -11,12 +11,12 @@ function App() {
       .then((r) => r.json())
       .then(setActivities)
   }, []);
-console.log(activities)
+
 
   return(
     <div>
       <Home />
-      <ActivitiesContainer />
+      <ActivitiesContainer activities={activities}/>
       <AddForm />
     </div>
   )

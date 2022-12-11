@@ -4,7 +4,7 @@ function AddForm() {
     const [name, setName ] = useState("");
     const [image, setImage] = useState("");
     const [location, setLocation] = useState("");
-
+    const [category, setCategory] = useState("");
 
     function handleNameChange(e) {
         setName(e.target.value)
@@ -18,6 +18,10 @@ function AddForm() {
         setLocation(e.target.value)
     }
 
+    function handleCategoryChange(e) {
+        setCategory(e.target.value)
+    }
+
     return (
         <form className="add-activity">
             <label>Name
@@ -28,6 +32,9 @@ function AddForm() {
             </label>
             <label>Location
                 <input type="text" onChange={handleLocationChange} value={location} />
+            </label>
+            <label>Category
+                <input type="text" onChange={handleCategoryChange} value={category} />
             </label>
             <button type="submit">Submit</button>
         </form>

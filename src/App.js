@@ -14,18 +14,23 @@ function App() {
       .then(setActivities)
   }, []);
 
+  function deleteActivity(id) {
+    const updatedList = activities.filter((activity) => activity.id !== id)
+    setActivities(updatedList)
+  }
+
 
   return(
     <div>
       <NavBar />
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/activities">
-          <ActivitiesContainer activities={activities}/>
+        <Route exact path="/activities">
+          <ActivitiesContainer activities={activities} deleteActivity={deleteActivity} />
         </Route>
-        <Route path="new">
+        <Route exact path="new">
           <AddForm />
         </Route>
       </Switch>

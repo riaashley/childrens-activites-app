@@ -1,10 +1,14 @@
 import React from "react";
 
-function ActivityCard({ activity }) {
-    const { image, name} = activity
+function ActivityCard({ activity, deleteActivity }) {
+    const { image, name, id } = activity
 
     function handleDelete(){
-        
+        fetch(`http://localhost:3004/activities/${id}`, {
+            method: "DELETE"
+        })
+            .then((r) => r.json())
+            .then(() => deleteActivity(id))
     }
 
     return (

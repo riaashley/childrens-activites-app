@@ -1,0 +1,60 @@
+{
+    "activities": [
+      {
+        "id": 1,
+        "name": "Jumping Jacks",
+        "image": "https://images.pexels.com/photos/5458708/pexels-photo-5458708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "location": "Rancho Cucamonga, CA",
+        "category": "Indoor Playground",
+        "description": "Jumping Jacks is an indoor bouncing area with three jump rooms, games & birthday parties too!"
+      },
+      {
+        "id": 2,
+        "name": "Raging Waters",
+        "image": "https://images.pexels.com/photos/3453009/pexels-photo-3453009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "location": "San Dimas, CA",
+        "category": "Water Park",
+        "description": "Water fun at California's largest water park! Raging Waters San Dimas is 50 amazing acres of water fun, with over 35 slides and attractions!"
+      },
+      {
+        "id": 3,
+        "name": "Wheel Fun Rentals at Irvine Park",
+        "image": "https://images.pexels.com/photos/1128318/pexels-photo-1128318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "location": "Orange, CA",
+        "category": "Outdoor Recreation",
+        "description": "Bike and boat rentals for those active families who want  to enjoy Irvine Park!"
+      },
+      {
+        "id": 4,
+        "name": "The Childrens Musuem At La Habra",
+        "image": "https://img.freepik.com/premium-photo/boy-science-class-child-is-engaged-science_247622-29454.jpg?w=826",
+        "location": "La Habra, CA",
+        "category": "Musuem",
+        "description": "Children's Musuem at La Habra encourages learning through play, with exhibits to develop skills, express creativity, & discover!"
+      },
+      {
+        "id": 5,
+        "name": "Kidspace Children's Musuem",
+        "image": "https://img.freepik.com/premium-photo/little-boy-is-looking-through-window-lights-are-reflecting-window_476952-711.jpg?w=826",
+        "location": "Pasadena, CA",
+        "category": "Musuem",
+        "description": "Kidspace is a nonprofit musuem designed to delight and engage children emotionally, intelluctually, and physically through joyful, kid-driven experiences."
+      },
+      {
+        "id": 6,
+        "name": "TinkerSpace",
+        "image": "https://img.freepik.com/free-photo/boy-looking-carefully-attaching-lego-pieces_259150-60429.jpg?w=826&t=st=1670644852~exp=1670645452~hmac=ca8b6188b0f92a39e761118e634c1826147a088aa1ee54523e8d81d63e9c12b5",
+        "location": "Montclair, CA",
+        "category": "Musuem",
+        "description": "TinkerSpae is a maker space for young poeple with hands on opportunities to explore Sciene, Technology, Engineering, Art and Matehmatics."
+      },
+      {
+        "id": 7,
+        "name": "Discovery Cube Orange County",
+        "image": "https://img.freepik.com/free-photo/side-view-boy-learning-how-use-telescope_23-2148761962.jpg?w=826&t=st=1670644949~exp=1670645549~hmac=785d88b30880a69bb6c7a367db72f0cc5c3efbfa5480633310714987c25bc3ee",
+        "location": "Santa Ana, CA",
+        "category": "Musuem",
+        "description": "Discovery Cube Orange County is an educational musuem with focus on kids offers oer 100 hands-on exhibits, plus special programs."
+      }
+    ]
+  }

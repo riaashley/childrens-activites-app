@@ -4,6 +4,7 @@ import ActivitiesContainer from "./ActivitiesContainer";
 import AddForm from "./AddForm";
 import NavBar from "./NavBar";
 import { Route, Switch } from "react-router-dom";
+import ActivityDetails from "./ActivityDetails";
 
 function App() {
   const[activities, setActivities] = useState([]);
@@ -36,6 +37,9 @@ function App() {
         </Route>
         <Route exact path="/new">
           <AddForm activityAdded={activityAdded} />
+        </Route>
+        <Route exact path="/activities/:id">
+          <ActivityDetails />
         </Route>
       </Switch>
     </div>

@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 function ActivityDetails(){
+    const [activity, setActivity] = useState(null);
+    const {id} = useParams();
+ 
+
+    useEffect(() => {
+        fetch(`http://localhost:3004/activities/${id}`)
+            .then((r) => r.json())
+            .then(data => setActivity(data))
+    }, [])
+    
+    if (!activity) {
+        return <div className="error">Error</div>
+    }
+
+    const {name, image, location, description, category} = activity
+
     return (
-        <div>
-            
-        </div>
-    )
+        <div className="details">
+            <img src={image} alt="photo" width="75%" 
+             />   
+             <h1>{name}</h1>
+             <h2>{location}</h2>
+             <span>{category}</span>
+             <p>{description}</p>
+         </div>
+     )
 }
 
 export default ActivityDetails;

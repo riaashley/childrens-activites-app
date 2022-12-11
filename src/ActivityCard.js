@@ -21,7 +21,7 @@ function ActivityCard({ activity, deleteActivity }) {
                 Remove
             </button>
             <div>
-                <Link className="details" to={`activities${activity.id}`}>{name}</Link>
+                <Link className="details" to={`activities/${activity.id}`}>{name}</Link>
             </div>
         </div>
     )

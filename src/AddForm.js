@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function AddForm() {
+function AddForm({ activityAdded }) {
     const [name, setName ] = useState("");
     const [image, setImage] = useState("");
     const [location, setLocation] = useState("");
@@ -27,8 +27,28 @@ function AddForm() {
         setDescription(e.target.value)
     }
 
+    function handleSubmit(e) {
+        e.preventDefault()
+        const newList = {
+            name: name,
+            image: image,
+            location: location,
+            category: category, 
+            description: description
+        }
+        fetch("http://localhost:3004/activities", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newList)
+        })
+            .then((r) => r.json())
+            .then(data => activityAdded(data))
+    }
+
     return (
-        <form className="add-activity">
+        <form className="add-activity" onSubmit={handleSubmit}>
             <label>Name
                 <input type="text" onChange={handleNameChange} value={name} />
             </label>

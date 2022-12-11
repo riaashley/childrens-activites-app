@@ -19,6 +19,10 @@ function App() {
     setActivities(updatedList)
   }
 
+  function activityAdded(newActivity) {
+    setActivities([...activities, newActivity])
+  }
+
 
   return(
     <div>
@@ -30,8 +34,8 @@ function App() {
         <Route exact path="/activities">
           <ActivitiesContainer activities={activities} deleteActivity={deleteActivity} />
         </Route>
-        <Route exact path="new">
-          <AddForm />
+        <Route exact path="/new">
+          <AddForm activityAdded={activityAdded} />
         </Route>
       </Switch>
     </div>

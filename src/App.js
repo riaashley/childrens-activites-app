@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Home from "./Home";
 import ActivitiesContainer from "./ActivitiesContainer";
 import AddForm from "./AddForm";
+import NavBar from "./NavBar";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   const[activities, setActivities] = useState([]);
@@ -15,9 +17,18 @@ function App() {
 
   return(
     <div>
-      <Home />
-      <ActivitiesContainer activities={activities}/>
-      <AddForm />
+      <NavBar />
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+        <Route path="/activities">
+          <ActivitiesContainer activities={activities}/>
+        </Route>
+        <Route path="new">
+          <AddForm />
+        </Route>
+      </Switch>
     </div>
   )
 }

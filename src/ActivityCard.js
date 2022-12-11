@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ActivityDetails from "./ActivityDetails";
 
 function ActivityCard({ activity, deleteActivity }) {
     const { image, name, id } = activity
@@ -15,10 +17,12 @@ function ActivityCard({ activity, deleteActivity }) {
         <div className="activity-card">
             <img src={image} alt="photo" width="75%"
             />
-            <h1>{name}</h1>
             <button onClick={handleDelete}>
                 Remove
             </button>
+            <div>
+                <Link className="details" to={`activities${activity.id}`}>{name}</Link>
+            </div>
         </div>
     )
 }

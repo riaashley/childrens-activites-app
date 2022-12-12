@@ -65,3 +65,11 @@ ul {
     color: #3B633D;
   }
   
+  .activity-card a:hover{
+    color: #6d9c78;
+  }
+  .details {
+    margin-top:90px;
+    margin-bottom: 40px;
+  }
+  

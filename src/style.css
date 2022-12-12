@@ -36,3 +36,11 @@ ul {
 .new_activity a:hover {
     color: #e0a956 ;
 }
+
+.home_header {
+  margin-top: 300px;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Unbounded', cursive;
+  color: #3B633D ;
+}

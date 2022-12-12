@@ -73,3 +73,21 @@ ul {
     margin-bottom: 40px;
   }
   
+  h2 {
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  background-color: #c8e0c8; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+}

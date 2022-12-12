@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@300&family=Unbounded:wght@500&display=swap');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+}
+
+
+.new_activity a{
+    color: #c4801c;
+}
+  
+
+.home a:hover {
+    color: #dac2da ;
+}
+
+.new_activity a:hover {
+    color: #e0a956 ;
+}

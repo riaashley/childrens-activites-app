@@ -44,3 +44,14 @@ ul {
   font-family: 'Unbounded', cursive;
   color: #3B633D ;
 }
+
+.activityName {
+  font-family: 'Unbounded', cursive;
+  color: #3B633D;
+  }
+    
+* {
+
+  text-align: center;
+    
+  }

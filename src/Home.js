@@ -2,9 +2,9 @@ import React from "react";
 
 function Home() {
     return(
-        <div>
-            It's Playtime!
-        </div>
+        <h1 className="home_header">
+<center>It's Playtime!</center>
+        </h1>
     )
 }
 

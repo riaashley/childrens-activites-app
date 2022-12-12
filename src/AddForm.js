@@ -48,24 +48,26 @@ function AddForm({ activityAdded }) {
     }
 
     return (
-        <form className="add-activity" onSubmit={handleSubmit}>
-            <label>Name
+       <center> <h1 className="NewActivity_header">
+       Submit a New Activity!
+               </h1><form className="add-activity" onSubmit={handleSubmit}>
+            <label>Name</label><br></br>
                 <input type="text" onChange={handleNameChange} value={name} />
-            </label>
-            <label>Image
+            <br></br>
+            <label>Link to Image</label><br></br>
                 <input type="text" onChange={handleImageChange} value={image} />
-            </label>
-            <label>Location
+                <br></br>
+            <label>Location</label><br></br>
                 <input type="text" onChange={handleLocationChange} value={location} />
-            </label>
-            <label>Category
+                <br></br>
+            <label>Category </label><br></br>
                 <input type="text" onChange={handleCategoryChange} value={category} />
-            </label>
-            <label>Description
+                <br></br>
+            <label>Description</label><br></br>
                 <input type="text" onChange={handleDescriptionChange} value={description} />
-            </label>
+                <br></br>
             <button type="submit">Submit</button>
-        </form>
+        </form></center>
     )
 }
 

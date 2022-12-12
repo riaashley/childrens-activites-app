@@ -1,13 +1,148 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@300&family=Unbounded:wght@500&display=swap');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+}
+  
+li {
+    float: left;
+    margin-top: 15px;
+    padding-left: 20px;
+   
+}
+  
+li a {
+    display: block;
+    color: #255830 ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home a{
+    color: #d398d3 ;
+
+}
+
+.new_activity a{
+    color: #c4801c;
+}
+  
+
+.home a:hover {
+    color: #dac2da ;
+}
+
+.new_activity a:hover {
+    color: #e0a956 ;
+}
+
+li a:hover {
+    color: #6d9c78 ;
+}
+
+
+body {
+  background-color: #98c29a ;
+  text-align: center;
+  margin: auto;
+}
+
+
+.home_header {
+  margin-top: 300px;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Unbounded', cursive;
+  color: #3B633D ;
+}
+
+.activityName {
+  font-family: 'Unbounded', cursive;
+  color: #3B633D;
+  }
+    
+* {
+
+  text-align: center;
+    
+  }
+
+.activity-card {
+  margin-top: 90px;
+  padding: 0;
+}
+
+.activity-card a:visited{
+  color: #3B633D;
+}
+
+.activity-card a:hover{
+  color: #6d9c78;
+}
+.details {
+  margin-top:90px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  background-color: #c8e0c8; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+}
+
+a:link {
+  font-family: 'Unbounded', cursive;
+  text-decoration: none;
+  color: #3B633D;
+}
+
+
+button:hover{
+  color: #633563;
+  background:#c8e0c8;
+}
+
+.add-activity {
+  margin-top: 100px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 40px;
+}
+
+input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.NewActivity_header {
+  margin-top: 200px;
+  overflow: hidden;
+  font-family: 'Unbounded', cursive;
+  color: #3B633D ;
 }

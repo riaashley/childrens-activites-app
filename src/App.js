@@ -5,6 +5,7 @@ import AddForm from "./AddForm";
 import NavBar from "./NavBar";
 import { Route, Switch } from "react-router-dom";
 import ActivityDetails from "./ActivityDetails";
+import "./style.css";
 
 function App() {
   const[activities, setActivities] = useState([]);
@@ -26,7 +27,7 @@ function App() {
 
 
   return(
-    <div>
+    <div class="NavBar">
       <NavBar />
       <Switch>
         <Route exact path="/">
@@ -43,6 +44,8 @@ function App() {
         </Route>
       </Switch>
     </div>
+
+    
   )
 }
 export default App;

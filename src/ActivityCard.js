@@ -15,14 +15,15 @@ function ActivityCard({ activity, deleteActivity }) {
 
     return (
         <div className="activity-card">
-            <img src={image} alt="photo" width="75%"
-            />
-            <button onClick={handleDelete}>
-                Remove
-            </button>
+            <img src={image} alt="photo" width="35%"
+            /><br></br>
+
             <div>
                 <Link className="details" to={`activities/${activity.id}`}>{name}</Link>
             </div>
+            <button onClick={handleDelete}>
+                Remove
+            </button>
         </div>
     )
 }

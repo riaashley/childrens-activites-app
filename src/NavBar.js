@@ -5,17 +5,17 @@ function NavBar() {
     return (
         <div className="navDiv">
             <ul className="navBar">
-                <li className="link">
+                <li className="home">
                     <Link to="/">
                          Home
                      </Link>
                  </li>
-                <li className="link">
+                <li className="activities">
                     <Link to="/activities">
                      Activities
                     </Link>
                  </li>  
-                 <li className="link">
+                 <li className="new_activity">
                      <Link to="/new">
                          New Activity
                      </Link>

@@ -21,9 +21,9 @@ function ActivityDetails(){
 
     return (
         <div className="details">
-            <img src={image} alt="photo" width="75%" 
+            <img src={image} alt="photo" width="55%" 
              />   
-             <h1>{name}</h1>
+             <h1 className="activityName">{name}</h1>
              <h2>{location}</h2>
              <span>{category}</span>
              <p>{description}</p>
